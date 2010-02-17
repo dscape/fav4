@@ -1,0 +1,992 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+	display: none;
+}
+#wrapper {
+	text-align: center;
+}
+body 
+	{
+	color: white;
+	background-color: #fff;
+	margin: 0px;
+	background: url('images/bg.gif') repeat-x fixed center center;
+	height: 95%;
+
+	
+}
+#horizon {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	height: 1px;
+	overflow: visible;
+	visibility: visible;
+	display: block;
+}
+
+#content {
+	text-align: left;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	margin-left: -350px;
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	width: 700px;
+	height: 200px;
+	visibility: visible;
+}
+.clear {
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+}
+#footer 
+	{
+	font-size: 11px;
+	text-align: right;
+	position: absolute;
+	bottom: 12px;
+	left: 0px;
+	width: 99%;
+	height: 35px;
+	visibility: visible;
+	display: block;
+}
+#content .bodytext {
+
+}
+#content .bodytext li {
+	height: 190px;
+	float: left;
+	margin-right: 25px;
+	background: url('images/shadow.png') no-repeat bottom center;	
+}
+
+#content .bodytext li.last {
+	margin-right: 0px;
+}
+
+#content li a {
+	text-indent: -8008px;
+	overflow: hidden;
+	float: left;
+	width: 156px;
+	height: 156px;
+	background: no-repeat 0px 0px;
+}
+
+
+#content li a:hover {
+	opacity: .9;
+}
+#content li a:active, .downkey {
+	background-position: 0px -156px;
+	opacity: 1;
+}
+.numkey {
+	background-position: 0px -156px !important;
+}
+
+#footer a{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-indent: 8008px;
+	float: right;
+	width:133px;
+	height: 35px;
+	background: url('images/settings.gif') no-repeat 0 -70px;
+		
+}
+.settingsCookie {
+	background-position: 0 0 !important;
+}
+
+#footer a.settingsCookie:hover, .skey {
+	background-position: 0 -35px !important;
+}
+
+#footer a.settingsCookie:active {
+	background-position: 0 -70px !important;
+}
+#fancybox-inner {
+	overflow: hidden !important;	
+}
+#settingsModal {
+	display: none;
+}
+
+#modalcontent {
+	background: #f3f3f3 url('images/modal-bg.gif') repeat-x top center;
+	height: 400px;
+	color: #3e3e3e;
+	text-align: center;
+/*	width: 770px;*/
+}
+
+#modalcontent a {
+	font-weight: bold;
+	color: #008aff;
+	text-decoration: none;
+}
+#modalcontent a:hover {
+	text-decoration: underline;
+}
+
+#modalnav {
+	width: 465px;
+	margin: 0 auto 0 auto;
+/*	border: 1px solid #999;*/
+}
+#modalnav, #info {
+	text-align: center;
+}
+
+#info {
+	text-align: left;
+	font-size: 20px;
+	padding: 100px 0 0 156px;
+}
+#info p {
+	margin-bottom: 20px;
+	display: block;
+	font-size: 30px;
+}
+#info ol li {
+	float: none;
+	text-align: left;
+	line-height: 26px;
+}
+#info ol {
+	margin-left: 29px;
+}
+
+#sites, #contact, #faq {
+	display: none;
+}
+#modalnav ul li {
+	float: left;
+}
+
+#modalnav ul li a {
+	display: block;
+	float: left;
+	width: 114px;
+	height: 22px;
+	padding-top: 6px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #727272;
+	background-color: #f3f3f3;
+	margin-right: 1px;
+}
+#modalnav ul li a:hover {
+	background-color: #f7f7f7;
+	color: #308efb;
+}
+
+#modalnav ul li a:hover {
+	text-decoration: none;
+}
+.navActive {
+	background-color: #308efb !important;
+	color: #fff !important;
+	cursor: default;
+}
+.navInactive {
+	background-color: #f3f3f3;
+}
+
+#sites, #contact, #faq {
+	margin-top: 100px;
+}
+#sites {
+	margin-top: 20px;
+}
+#contact {
+	text-align: left;
+	margin: 45px 153px 0 153px;
+}
+#contact span {
+	display: block;
+}
+#contact textarea {
+	width: 464px;
+	margin-bottom: 10px;
+	height: 100px;
+}
+#contact input:hover {
+/*	border: 1px solid #999;*/
+}
+#contact p {
+	margin-bottom: 15px;
+	line-height: 18px;
+}
+.formlabel {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #999;
+	margin: 3px 0 5px 0;
+}
+
+.clearit {
+	clear: both;
+}
+#contact p.validate, #contactBtn {
+	float: left;
+}
+#contact p.validate {
+	margin: 11px 0 0 10px;
+	font-size: 13px;
+}
+
+#faq .question {
+	font-style: italic;
+	margin: 13px 0 3px 0;
+	color: orange;
+}
+#faq .answer {
+	font-size: 13px;
+}
+#faq p strong {
+	margin-bottom: 25px;
+	display: block;
+}
+#faq {
+	margin: 45px 153px 0 153px;
+	text-align: left;
+	line-height: 18px;
+}
+
+.tweetie {
+	background: url('images/twitter-bird.gif') no-repeat left center;	
+	padding-left: 25px;
+}
+
+input#email {
+	height: 25px;
+	margin: 0 0 5px 0;
+}
+.sitenote {
+	color: orange;
+	margin-top: 5px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+/*CONFIG PAGE*/
+#favholder, #allsites, 
+#instructions, #myfavs {
+	display: block !important;
+	text-align: left;
+}
+#favholder, 
+#allsites {
+	float: left; 
+	margin-top: 5px;
+}
+#favholder {
+	width: 185px;
+	padding-left: 25px;
+
+}
+#allsites {
+/*	border-right: 1px solid #eee;*/
+	width: 525px;
+	height: 300px;
+	padding-left: 25px;
+	margin: 18px 0 0 0;
+/*	background-color: #ff99ee;*/
+	overflow: auto;
+}
+#allsites ul {
+	height: 720px;
+}
+#allsites ul li,
+#myfavs ul li {
+	float: left;	
+}
+#allsites ul li a, 
+#favholder ul li a,
+.ui-state-highlight {
+	display: block;
+	width: 144px;
+	height: 15px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	margin: 0 5px 5px 0;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+	background: #fff url('images/dragger.gif') no-repeat scroll right 3px;
+}
+#allsites ul li a span, 
+#favholder ul li a span {
+	padding-left: 23px;
+	background: #fff url('images/mini-icons3.png') no-repeat scroll 0 0; 
+	padding-bottom: 1px; 
+	background-color:transparent;
+}     
+
+#allsites ul li a:hover,
+#favholder ul li a:hover {
+	text-decoration: none;
+	border: 1px solid #999;
+	color: #555; 
+
+}
+
+#allsites ul li a:active,
+#allsites ul li.ui-sortable-helper a {
+	border: 1px solid #c9be5f;
+	background-color: #fbfae9;
+	color: #898142;
+	background: #fbfae9 url('images/dragger.gif') no-repeat scroll right -22px; 	
+	
+}   
+#favholder #myfavs {
+	background: url('images/null-fav.gif') no-repeat scroll center 0;  
+	height: 147px;  
+	width: 162px;
+}
+
+#myfavs ul {
+	height: 150px;
+	overflow: hidden;
+}
+#instructions {      
+	margin-top: 14px;
+	width: 162px;  
+	font-size: 12px; 
+	font-weight: bold;   
+	padding: 28px 0 0 0;
+    background: url('images/drag-icon.gif') no-repeat scroll 0 0; 
+	line-height: 15px;
+	color: #666;
+}     
+
+.site-header {
+	margin-top: -10px;
+	margin-bottom: 10px;
+	color: #666;
+	font-size: 11px;    
+	font-weight: bold;
+}      
+
+a.submit {    
+	margin: 37px 0 9px 0;
+	display: block;
+	width: 162px;
+	height: 40px;
+	padding: 0;   
+	background: url('images/save.gif') no-repeat scroll 0 0;    
+	overflow: hidden;
+	text-indent: -8008px;
+	cursor: default;
+}
+a.submit.active {
+	background-position: 0px -40px;	
+	cursor: pointer;
+}
+
+a.submit.active:hover{
+	background-position: 0 -80px;
+}
+
+a.submit.active:active {
+	background-position: 0 -120px;
+}
+p.validate {
+	font-weight: bold;
+	font-size: 11px;
+	color: green;
+	padding-left: 19px;
+	background: url('images/validation.gif') no-repeat scroll left center;  
+}
+/*Announcements*/
+
+#announce {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 12px;
+	background: url('images/new.gif') no-repeat scroll left center;
+	font-size: 11px;
+	color: #b1850d;
+	padding-left: 30px;
+}
+
+/*FAVICONS  */
+#allsites #icon-facebook,
+#myfavs #icon-facebook {
+	background-position: 0 0;
+}
+#allsites #icon-flickr,
+#myfavs #icon-flickr {
+	background-position: 0 -16px;
+}    
+#allsites #icon-gmail,
+#myfavs #icon-gmail {
+	background-position: 0 -32px;
+}     
+#allsites #icon-twitter,
+#myfavs #icon-twitter {
+	background-position: 0 -48px;
+}   
+#allsites #icon-blogger,
+#myfavs #icon-blogger {
+	background-position: 0 -64px;
+}  
+#allsites #icon-youtube,
+#myfavs #icon-youtube {
+	background-position: 0 -80px;
+}          
+#allsites #icon-cnn,
+#myfavs #icon-cnn {
+	background-position: 0 -112px;
+}  
+#allsites #icon-wikipedia,
+#myfavs #icon-wikipedia {
+	background-position: 0 -96px;
+}    
+#allsites #icon-nytimes,
+#myfavs #icon-nytimes{
+	background-position: 0 -128px;
+}   
+#allsites #icon-bbc-news,
+#myfavs #icon-bbc-news {
+	background-position: 0 -144px;
+}      
+#allsites #icon-espn,
+#myfavs #icon-espn {
+	background-position: 0 -160px;
+}        
+#allsites #icon-wordpress,
+#myfavs #icon-wordpress {
+   	background-position: 0 -176px;     
+}       
+#allsites #icon-ebay,
+#myfavs #icon-ebay {
+   	background-position: 0 -192px;     
+}   
+#allsites #icon-amazon,
+#myfavs #icon-amazon {
+   	background-position: 0 -208px;     
+}       
+#allsites #icon-delicious,
+#myfavs #icon-delicious {
+    background-position: 0 -224px;     
+}
+       
+#allsites #icon-tumblr,
+#myfavs #icon-tumblr {
+    background-position: 0 -240px;     
+}   
+#allsites #icon-vimeo,
+#myfavs #icon-vimeo {
+    background-position: 0 -256px;     
+}   
+#allsites #icon-hotmail,
+#myfavs #icon-hotmail {
+    background-position: 0 -272px;     
+}     
+#allsites #icon-google-news,
+#myfavs #icon-google-news {
+    background-position: 0 -288px;     
+}
+#allsites #icon-google-reader,
+#myfavs #icon-google-reader {
+    background-position: 0 -304px;     
+}  
+#allsites #icon-google-calendar,
+#myfavs #icon-google-calendar {
+    background-position: 0 -320px;     
+}   
+#allsites #icon-aol,
+#myfavs #icon-aol {
+    background-position: 0 -336px;     
+}   
+#allsites #icon-boa,
+#myfavs #icon-boa {
+    background-position: 0 -352px;     
+}   
+#allsites #icon-orkut,
+#myfavs #icon-orkut {
+    background-position: 0 -368px;     
+}
+
+#allsites #icon-myspace,
+#myfavs #icon-myspace {
+    background-position: 0 -384px;     
+}
+
+#allsites #icon-engadget,
+#myfavs #icon-engadget {
+    background-position: 0 -400px;     
+}
+#allsites #icon-digg,
+#myfavs #icon-digg {
+    background-position: 0 -416px;     
+}
+#allsites #icon-ffffound,
+#myfavs #icon-ffffound {
+    background-position: 0 -432px;     
+}
+#allsites #icon-yahoo-mail,
+#myfavs #icon-yahoo-mail {
+    background-position: 0 -448px;     
+}
+#allsites #icon-last-fm,
+#myfavs #icon-last-fm {
+    background-position: 0 -464px;     
+}
+#allsites #icon-npr,
+#myfavs #icon-npr {
+    background-position: 0 -480px;     
+}
+#allsites #icon-netvibes,
+#myfavs #icon-netvibes {
+    background-position: 0 -496px;     
+}
+#allsites #icon-i-google,
+#myfavs #icon-i-google {
+    background-position: 0 -512px;     
+}
+#allsites #icon-mobile-me,
+#myfavs #icon-mobile-me {
+    background-position: 0 -528px;     
+}
+#allsites #icon-guardian,
+#myfavs #icon-guardian {
+    background-position: 0 -544px;     
+}
+#allsites #icon-reddit,
+#myfavs #icon-reddit {
+    background-position: 0 -560px;     
+}
+#allsites #icon-linked-in,
+#myfavs #icon-linked-in {
+    background-position: 0 -576px;     
+}
+#allsites #icon-gizmodo,
+#myfavs #icon-gizmodo {
+    background-position: 0 -592px;     
+}
+#allsites #icon-life-hacker,
+#myfavs #icon-life-hacker {
+    background-position: 0 -608px;     
+}
+#allsites #icon-teux-deux,
+#myfavs #icon-teux-deux {
+    background-position: 0 -624px;     
+}
+#allsites #icon-engadget,
+#myfavs #icon-engadget {
+    background-position: 0 -640px;     
+}
+#allsites #icon-mint,
+#myfavs #icon-mint {
+    background-position: 0 -656px;     
+}
+#allsites #icon-pandora,
+#myfavs #icon-pandora {
+    background-position: 0 -672px;     
+}
+#allsites #icon-hulu,
+#myfavs #icon-hulu {
+    background-position: 0 -688px;     
+}
+#allsites #icon-weather-channel,
+#myfavs #icon-weather-channel {
+    background-position: 0 -704px;     
+}
+#allsites #icon-netflix,
+#myfavs #icon-netflix {
+    background-position: 0 -720px;     
+}
+#allsites #icon-google-docs,
+#myfavs #icon-google-docs {
+    background-position: 0 -736px;     
+}
+#allsites #icon-stumble-upon,
+#myfavs #icon-stumble-upon {
+    background-position: 0 -752px;     
+}
+#allsites #icon-bing,
+#myfavs #icon-bing {
+    background-position: 0 -768px;     
+}
+#allsites #icon-google,
+#myfavs #icon-google {
+    background-position: 0 -784px;     
+}
+#allsites #icon-google-wave,
+#myfavs #icon-google-wave {
+    background-position: 0 -800px;     
+}
+#allsites #icon-google-voice,
+#myfavs #icon-google-voice {
+    background-position: 0 -816px;     
+}
+#allsites #icon-meebo,
+#myfavs #icon-meebo {
+    background-position: 0 -832px;     
+}
+#allsites #icon-remember-the-milk,
+#myfavs #icon-remember-the-milk {
+    background-position: 0 -848px;   
+/*  	font-size: 10px;*/
+/*	line-height: 16px;*/
+}
+#allsites #icon-dropbox,
+#myfavs #icon-dropbox {
+    background-position: 0 -864px;     
+}
+#allsites #icon-etsy,
+#myfavs #icon-etsy {
+    background-position: 0 -880px;     
+}
+#allsites #icon-evernote,
+#myfavs #icon-evernote {
+    background-position: 0 -896px;     
+}
+#allsites #icon-yahoo,
+#myfavs #icon-yahoo {
+	background-image: url('images/mini-yahoo.png');   
+}
+#allsites #icon-mashable,
+#myfavs #icon-mashable {
+	background-image: url('images/mini-mashable.png');   
+}
+#allsites #icon-fox-news,
+#myfavs #icon-fox-news {
+	background-image: url('images/mini-fox-news.gif');   
+}
+#allsites #icon-groove-shark,
+#myfavs #icon-groove-shark {
+	background-image: url('images/mini-groove-shark.gif');   
+}
+#allsites #icon-msn,
+#myfavs #icon-msn {
+	background-image: url('images/mini-msn.gif');   
+}
+#allsites #icon-deviant-art,
+#myfavs #icon-deviant-art {
+	background-image: url('images/mini-deviant-art.gif');   
+}
+#allsites #icon-craigslist,
+#myfavs #icon-craigslist {
+	background-image: url('images/mini-craigslist.gif');   
+}
+#allsites #icon-reuters,
+#myfavs #icon-reuters {
+	background-image: url('images/mini-reuters.gif');   
+}
+#allsites #icon-livejournal,
+#myfavs #icon-livejournal {
+	background-image: url('images/mini-livejournal.gif');   
+}
+#allsites #icon-brizzly,
+#myfavs #icon-brizzly {
+	background-image: url('images/mini-brizzly.gif');   
+}
+#allsites #icon-feedly,
+#myfavs #icon-feedly {
+	background-image: url('images/mini-feedly.gif');   
+}
+#allsites #icon-friend-feed,
+#myfavs #icon-friend-feed {
+	background-image: url('images/mini-friend-feed.gif');   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- ICONS ----------------------- */
+
+#content li a#facebook {
+	background-image:url('images/icon-facebook.png');
+}
+
+#content li a#flickr {
+	background-image:url('images/icon-flickr.png');
+}
+
+#content li a#gmail {
+	background-image:url('images/icon-gmail.png');
+}
+
+#content li a#twitter {
+	background-image:url('images/icon-twitter.png');
+}
+#content li a#youtube {
+	background-image:url('images/icon-youtube.png');
+}
+#content li a#wikipedia {
+	background-image:url('images/icon-wikipedia.png');
+}
+#content li a#blogger {
+	background-image:url('images/icon-blogger.png');
+}
+#content li a#cnn {
+	background-image:url('images/icon-cnn.png');
+}
+#content li a#wordpress {
+	background-image:url('images/icon-wordpress.png');
+}
+#content li a#espn {
+	background-image:url('images/icon-espn.png');
+}
+#content li a#ebay {
+	background-image:url('images/icon-ebay.png');
+}
+
+#content li a#google-reader {
+	background-image:url('images/icon-google-reader.png');
+}
+#content li a#google-news {
+	background-image:url('images/icon-google-news.png');
+}
+#content li a#google-calendar {
+	background-image:url('images/icon-google-calendar.png');
+}
+#content li a#nytimes {
+	background-image:url('images/icon-nytimes.png');
+}
+#content li a#bbc-news {
+	background-image:url('images/icon-bbc-news.png');
+}
+#content li a#delicious {
+	background-image:url('images/icon-delicious.png');
+}
+#content li a#tumblr {
+	background-image:url('images/icon-tumblr.png');
+}
+#content li a#vimeo {
+	background-image:url('images/icon-vimeo.png');
+}
+#content li a#amazon {
+	background-image:url('images/icon-amazon.png');
+}
+#content li a#aol {
+	background-image:url('images/icon-aol.png');
+}
+#content li a#orkut {
+	background-image:url('images/icon-orkut.jpg');
+}
+#content li a#digg {
+	background-image:url('images/icon-digg.png');
+}
+#content li a#myspace {
+	background-image:url('images/icon-myspace.png');
+}
+#content li a#ffffound {
+	background-image:url('images/icon-ffffound.png');
+}
+#content li a#yahoo-mail {
+	background-image:url('images/icon-yahoo-mail.png');
+}
+#content li a#last-fm {
+	background-image:url('images/icon-last-fm.png');
+}
+#content li a#npr {
+	background-image:url('images/icon-npr.png');
+}
+#content li a#mobile-me {
+	background-image:url('images/icon-mobile-me.png');
+}
+#content li a#netvibes {
+	background-image:url('images/icon-netvibes.png');
+}
+#content li a#i-google {
+	background-image:url('images/icon-i-google.png');
+}
+#content li a#guardian {
+	background-image:url('images/icon-guardian.png');
+}
+#content li a#hotmail {
+	background-image:url('images/icon-hotmail.png');
+}
+#content li a#reddit {
+	background-image:url('images/icon-reddit.png');
+}
+#content li a#linked-in {
+	background-image:url('images/icon-linked-in.png');
+}
+#content li a#gizmodo {
+	background-image:url('images/icon-gizmodo.png');
+}
+#content li a#life-hacker {
+	background-image:url('images/icon-life-hacker.png');
+}
+#content li a#teux-deux {
+	background-image:url('images/icon-teux-deux.png');
+}
+#content li a#engadget {
+	background-image:url('images/icon-engadget.png');
+}
+#content li a#mint {
+	background-image:url('images/icon-mint.png');
+}
+#content li a#pandora {
+	background-image:url('images/icon-pandora.png');
+}
+#content li a#hulu {
+	background-image:url('images/icon-hulu.png');
+}
+#content li a#weather-channel {
+	background-image:url('images/icon-weather-channel.png');
+}
+#content li a#netflix {
+	background-image:url('images/icon-netflix.png');
+}
+#content li a#google-docs {
+	background-image:url('images/icon-google-docs.png');
+}
+#content li a#stumble-upon {
+	background-image:url('images/icon-stumble-upon.png');
+}
+#content li a#bing {
+	background-image:url('images/icon-bing.png');
+}
+#content li a#google {
+	background-image:url('images/icon-google.png');
+}
+#content li a#google-wave {
+	background-image:url('images/icon-google-wave.png');
+}
+#content li a#google-voice {
+	background-image:url('images/icon-google-voice.png');
+}
+#content li a#meebo {
+	background-image:url('images/icon-meebo.png');
+}
+#content li a#remember-the-milk {
+	background-image:url('images/icon-remember-the-milk.png');
+}
+#content li a#dropbox {
+	background-image:url('images/icon-dropbox.png');
+}
+#content li a#etsy {
+	background-image:url('images/icon-etsy.png');
+}
+#content li a#evernote {
+	background-image:url('images/icon-evernote.png');
+}
+#content li a#yahoo {
+	background-image:url('images/icon-yahoo.png');
+}
+#content li a#mashable {
+	background-image:url('images/icon-mashable.png');
+}
+#content li a#fox-news {
+	background-image:url('images/icon-fox-news.png');
+}
+#content li a#groove-shark {
+	background-image:url('images/icon-groove-shark.png');
+}
+#content li a#msn {
+	background-image:url('images/icon-msn.png');
+}
+#content li a#orkut {
+	background-image:url('images/icon-orkut.png');
+}
+#content li a#deviant-art {
+	background-image:url('images/icon-deviant-art.png');
+}
+#content li a#craigslist {
+	background-image:url('images/icon-craigslist.png');
+}
+#content li a#reuters {
+	background-image:url('images/icon-reuters.png');
+}
+#content li a#livejournal {
+	background-image:url('images/icon-livejournal.png');
+}
+#content li a#brizzly {
+	background-image:url('images/icon-brizzly.png');
+}
+#content li a#feedly {
+	background-image:url('images/icon-feedly.png');
+}
+#content li a#friend-feed {
+	background-image:url('images/icon-friend-feed.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

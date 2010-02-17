@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+	<meta name="author" content="Daniel Box">
+	<meta name="copyright" content="2010 Daniel Box">
+	<meta name="description" content="A simple website to set as your browser's default homepage featuring links to 4 of your favorite websites.">
+	<link rel="image_src" href="images/site-preview-small.jpg">
+	<title>Fav4.org</title>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+	<script src="_lib/jquery.ui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="_lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="_lib/fancybox/jquery.fancybox-1.3.0.pack.js"></script>
+ 	<script src="_lib/fav4.js" type="text/javascript" charset="utf-8"></script>
+
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<!--[if IE]>
+	<link rel="stylesheet" href="ie-styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<![endif]-->
+	<link rel="stylesheet" href="_lib/fancybox/jquery.fancybox-1.3.0.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+</head>
+<body>
+<div id="horizon">
+	<div id="content">
+		<div class="bodytext">
+			<ul>
+				<li><a id="facebook" href="http://www.facebook.com" class="link1">facebook</a></li>
+				<li><a id="flickr" href="http://www.flickr.com" class="link2">flickr</a></li>
+				<li><a id="gmail" href="http://www.gmail.com" class="link3">gmail</a></li>
+				<li class="last"><a id="twitter" href="http://www.twitter.com" class="link4">twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<a id="settings" href="index.html#settingsModal" title="Customize this site!">settings</a> 
+</div>
+		
+<div id="settingsModal">
+	<div id="modalcontent">
+		<div id="modalnav">
+			<ul>
+				<li><a id="infoNav" class="navActive" href="index.html#">info</a></li>
+				<li><a id="sitesNav" href="index.html#">config</a></li>
+				<li><a id="contactNav" href="index.html#">suggest</a></li>
+				<li><a id="faqNav" href="index.html#">faq</a></li>
+			</ul>	
+		</div>
+		<div style="clear:both;"></div>
+		<div id="sectionWrapper">
+			
+			<!-- info -->
+			<div id="info" style="display:block;" >
+				<p><b>How to use this site:</b></p>
+				<ol>
+					<li>Pick your favorite four websites <a id="sitesNav2" href="index.html#">from this list</a>.</li>
+					<li>Set this site as your browser's start page.</li>
+					<li>Enjoy!</li>
+				</ol>
+			</div>
+			
+			<!-- site selection -->
+			<div id="sites">
+				<!-- <p class="site-header">My Fav4:</p> -->
+				<div id="allsites">
+					<ul id="myFavsOptions" class="connectedList">
+
+						<!-- A -->
+						<li><a href="http://www.amazon.com/"><span id="icon-amazon">Amazon</span></a></li>	
+						<li><a href="http://www.aol.com/"><span id="icon-aol">Aol</span></a></li>					
+						<!-- B -->
+						<li><a href="http://news.bbc.co.uk/"><span id="icon-bbc-news">BBC News</span></a></li>						
+						<li><a href="http://www.bing.com"><span id="icon-bing">Bing</span></a></li>	
+						<li><a href="http://www.blogger.com/"><span id="icon-blogger">Blogger</span></a></li>
+						<li><a href="http://www.brizzly.com/"><span id="icon-brizzly">Brizzly</span></a></li>
+						<!-- C -->
+						<li><a href="http://www.cnn.com/"><span id="icon-cnn">CNN</span></a></li>
+						<li><a href="http://www.craigslist.org/"><span id="icon-craigslist">Craigslist</span></a></li>
+						<!-- D -->
+						<li><a href="http://www.delicious.com/"><span id="icon-delicious">Delicious</span></a></li>		
+						<li><a href="http://www.deviantart.com/"><span id="icon-deviant-art">Deviant Art</span></a></li>					
+						<li><a href="http://www.digg.com/"><span id="icon-digg">Digg</span></a></li>
+						<li><a href="http://www.dropbox.com"><span id="icon-dropbox">Dropbox</span></a></li>						
+						<!-- E -->
+						<li><a href="http://www.ebay.com/"><span id="icon-ebay">Ebay</span></a></li>
+						<li><a href="http://www.engadget.com"><span id="icon-engadget">Engadget</span></a></li>
+						<li><a href="http://www.espn.com/"><span id="icon-espn">ESPN</span></a></li>																		
+						<li><a href="http://www.etsy.com/"><span id="icon-etsy">Etsy</span></a></li>
+						<li><a href="http://www.evernote.com/"><span id="icon-evernote">Evernote</span></a></li>
+						<!-- F -->
+						<li><a href="http://www.facebook.com/"><span id="icon-facebook">Facebook</span></a></li>
+						<li><a href="http://www.feedly.com/"><span id="icon-feedly">Feedly</span></a></li>
+						<li><a href="http://www.ffffound.com"><span id="icon-ffffound">ffffound</span></a></li>					
+						<li><a href="http://www.flickr.com/"><span id="icon-flickr">Flickr</span></a></li>
+						<li><a href="http://www.foxnews.com"><span id="icon-fox-news">Fox News</span></a></li>
+						<li><a href="http://www.friendfeed.com"><span id="icon-friend-feed">Friendfeed</span></a></li>
+						<!-- G -->
+						<li><a href="http://www.gizmodo.com"><span id="icon-gizmodo">Gizmodo</span></a></li>
+						<li><a href="https://mail.google.com/"><span id="icon-gmail">Gmail</span></a></li>
+						<li><a href="http://www.google.com"><span id="icon-google">Google</span></a></li>						
+						<li><a href="http://www.google.com/calendar"><span id="icon-google-calendar">Google Calendar</span></a></li>						
+						<li><a href="http://docs.google.com"><span id="icon-google-docs">Google Docs</span></a></li>						
+						<li><a href="http://www.google.com/reader"><span id="icon-google-reader">Google Reader</span></a></li>						
+						<li><a href="http://www.google.com/news"><span id="icon-google-news">Google News</span></a></li>
+						<li><a href="https://www.google.com/voice"><span id="icon-google-voice">Google Voice</span></a></li>					
+						<li><a href="https://wave.google.com/wave/"><span id="icon-google-wave">Google Wave</span></a></li>		
+						<li><a href="http://www.grooveshark.com"><span id="icon-groove-shark">Grooveshark</span></a></li>	
+						<li><a href="http://www.guardian.co.uk/"><span id="icon-guardian">Guardian</span></a></li>
+						<!-- H -->
+						<li><a href="http://www.hotmail.com/"><span id="icon-hotmail">Hotmail</span></a></li>
+						<li><a href="http://www.hulu.com"><span id="icon-hulu">hulu</span></a></li>	
+						<!-- I -->
+						<li><a href="http://www.google.com/ig/"><span id="icon-i-google">iGoogle</span></a></li>
+						<!-- J -->
+						<!-- K -->
+						<!-- L -->
+						<li><a href="http://www.last.fm/"><span id="icon-last-fm">Last.fm</span></a></li> 
+						<li><a href="http://www.lifehacker.com"><span id="icon-life-hacker">Life hacker</span></a></li>
+						<li><a href="http://www.linkedin.com/"><span id="icon-linked-in">Linked in</span></a></li>						
+						<li><a href="http://www.livejournal.com/"><span id="icon-livejournal">Livejournal</span></a></li>
+						<!-- M -->
+						<li><a href="http://www.mashable.com/"><span id="icon-mashable">Mashable</span></a></li>
+						<li><a href="http://www.meebo.com/"><span id="icon-meebo">Meebo</span></a></li>
+						<li><a href="http://www.me.com/"><span id="icon-mobile-me">Mobile Me</span></a></li>
+						<li><a href="http://www.mint.com/"><span id="icon-mint">Mint</span></a></li>
+						<li><a href="http://www.msn.com/"><span id="icon-msn">msn</span></a></li>
+						<li><a href="http://www.myspace.com/"><span id="icon-myspace">myspace</span></a></li>						
+						<!-- N -->
+						<li><a href="http://www.netflix.com"><span id="icon-netflix">Netflix</span></a></li>						
+						<li><a href="http://www.netvibes.com/"><span id="icon-netvibes">Netvibes</span></a></li>	
+						<li><a href="http://www.npr.org/"><span id="icon-npr">NPR</span></a></li>						
+						<li><a href="http://www.nytimes.com/"><span id="icon-nytimes">NY Times</span></a></li>						
+						<!-- O -->
+						<li><a href="http://www.orkut.com/"><span id="icon-orkut">Orkut</span></a></li>
+						<!-- P -->
+						<li><a href="http://www.pandora.com"><span id="icon-pandora">Pandora Radio</span></a></li>
+						<!-- Q -->
+						<!-- R -->
+						<li><a href="http://www.reddit.com/"><span id="icon-reddit">Reddit</span></a></li>
+						<li><a href="http://www.rememberthemilk.com"><span id="icon-remember-the-milk">Remember the Milk</span></a></li>	
+						<li><a href="http://www.reuters.com"><span id="icon-reuters">Reuters</span></a></li>
+						<!-- S -->
+						<li><a href="http://www.stumbleupon.com"><span id="icon-stumble-upon">Stumble Upon</span></a></li>
+						<!-- T -->
+						<li><a href="http://www.teuxdeux.com/"><span id="icon-teux-deux">Teux Deux</span></a></li>						
+						<li><a href="http://www.tumblr.com/"><span id="icon-tumblr">Tumblr</span></a></li>						
+						<li><a href="http://www.twitter.com/"><span id="icon-twitter">Twitter</span></a></li>
+						<!-- U -->
+						<!-- V -->
+						<li><a href="http://www.vimeo.com/"><span id="icon-vimeo">Vimeo</span></a></li>	
+						<!-- W -->
+						<li><a href="http://www.weather.com"><span id="icon-weather-channel">Weather.com</span></a></li>
+						<li><a href="http://www.wikipedia.org/"><span id="icon-wikipedia">Wikipedia</span></a></li>
+						<li><a href="http://www.wordpress.com/"><span id="icon-wordpress">WordPress</span></a></li>	
+						<!-- X -->
+						<!-- Y -->
+						<li><a href="http://www.yahoo.com"><span id="icon-yahoo">Yahoo!</span></a></li>
+						<li><a href="http://mail.yahoo.com"><span id="icon-yahoo-mail">Yahoo! Mail</span></a></li>
+						<li><a href="http://www.youtube.com/"><span id="icon-youtube">YouTube</span></a></li>
+						<!-- Z -->				
+					</ul>
+				</div>
+				<div id="favholder">
+					<p class="site-header">My Fav4:</p>
+					<div id="myfavs">
+						<ul id="myFavsList" class="connectedList">
+							<li class="empty"></li> 
+						</ul>
+					</div>
+					<div id="instructions">Drag four sites from the list on the left, then reorder to your pleasing! </div>
+					<a class="submit" href="index.html#">submit</a>
+					<p class="validate">Success!</p>
+				</div>
+
+			</div>
+			
+			<!-- contact -->
+			<div id="contact">
+				<p>Don't see your favorite site? Have a suggestion on how to improve this site? <strong>Let us know!</strong> Please check <a class="tweetie" href="http://www.twitter.com/fav4dotorg">@fav4dotorg</a> for updates on what's coming and what's new. <span class="sitenote">Note: Please <a href="http://derble.backpackit.com/pub/1368702-fav4-notable-site-recommendations" target="_blank">see this list</a> of sites in the queue before recommending a site.</span> </p>
+				<form action="index.html" id="suggestform">
+					<span class="formlabel">Your Email:</span>
+					<span><input type="text" name="email" id="email"></span>
+					<span class="formlabel">Message:</span>
+					<span><textarea cols="40" rows="7" name="body" id="contactBody"></textarea></span>
+					<span><input type="image" src="images/submit.gif" name="Submit" value="Submit" id="contactBtn"></span>
+					<p class="validate">Success! We got it! Thanks!</p>
+					<div class="clearit"></div>
+				</form>
+			</div>
+			
+			<!-- contact -->
+			<div id="faq">
+				<p><strong>Thanks for using version 1 of fav4.org. We'll be adding a few more features in the future, but we want to keep the site as simple as possible. Connect with <a class="tweetie" href="http://www.twitter.com/fav4dotorg">@fav4dotorg</a> on twitter for updates! </strong></p>
+				<p class="question">Why is __________ site not here?</p>
+				<p class="answer">We are striving to have the most popular sites available to add as your fav4, but since there are custom icons for each, there is a limit. Feel free to suggest what you'd like to see, but please <a href="http://derble.backpackit.com/pub/1368702-fav4-notable-site-recommendations" target="_blank">see this list</a> first.</p>
+				<p class="question">Optional Google search bar? Option to open links in a new window? Add/customize my own?</p>
+				<p class="answer">Yep, coming soon.</p>
+				<p class="question">Why is it not saving my site choices?</p>
+				<p class="answer">Please make sure you have cookies enabled.</p>
+				</div>
+			</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
